@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oley & Thusoo — Modern Casual Dining & Street Food | Islamabad</title>
+  <meta name="description" content="Oley & Thusoo is a modern casual dining restaurant in Islamabad (Faisal Town) open till 2 AM. Known for street-food-style gol gappay, papri chaat, charcoal kebabs, wings, and fries." />
+  
+  <!-- Google Fonts: Outfit (Display), Space Grotesk (Sub-headings), Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header id="site-header" class="site-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Oley and Thusoo Homepage">
+        <span class="brand-name">OLEY &amp; THISOO</span>
+        <span class="brand-sub">ISLAMABAD</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">Architecture &amp; Story</a>
+        <a href="#menu" class="nav-link">Menu Highlights</a>
+        <a href="#space" class="nav-link">The Space</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#location" class="nav-link">Hours &amp; Location</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="status-pill hide-mobile">
+          <span class="pulse-dot"></span>
+          <span>OPEN TILL 2 AM</span>
+        </div>
+        <a href="https://www.foodpanda.pk" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-sm">
+          <span>Order Delivery</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="brand-name">OLEY &amp; THISOO</span>
+      <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="drawer-content">
+      <nav class="mobile-nav">
+        <a href="#about" class="mobile-nav-link">Architecture &amp; Story</a>
+        <a href="#menu" class="mobile-nav-link">Menu Highlights</a>
+        <a href="#space" class="mobile-nav-link">The Space</a>
+        <a href="#reviews" class="mobile-nav-link">Reviews</a>
+        <a href="#location" class="mobile-nav-link">Hours &amp; Location</a>
+      </nav>
+      <div class="drawer-footer">
+        <p class="drawer-hours">Open Daily: 4:00 PM – 2:00 AM</p>
+        <p class="drawer-address">Block A, F18, 1796 Faisal Ave, Islamabad</p>
+        <div class="drawer-cta-group">
+          <a href="tel:+923035710000" class="btn btn-outline btn-full">Call +92 303 5710000</a>
+          <a href="https://www.foodpanda.pk" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-full">Order Foodpanda</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-wrapper">
+        <img src="./assets/hero_architecture.jpg" alt="Oley & Thusoo modern architectural facade in Islamabad" class="hero-bg-img" />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge reveal-item">
+            <span class="location-tag">ISLAMABAD</span>
+            <span class="divider-dot">·</span>
+            <span class="vibe-tag">STREET FOOD MEETS ARCHITECTURE</span>
+          </div>
+
+          <h1 class="hero-title reveal-item">
+            Contemporary Casual Dining.<br />
+            <span class="highlight-text">Playful Street-Food Edge.</span>
+          </h1>
+
+          <p class="hero-lead reveal-item">
+            Artisanal gol gappay, papri chaat, charcoal kebabs &amp; wings. Served in a raw, architecturally distinct sanctuary open daily till 2 AM.
+          </p>
+
+          <div class="hero-cta-group reveal-item">
+            <a href="https://www.foodpanda.pk" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-lg">
+              <span>Order on Foodpanda</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+            <a href="#menu" class="btn btn-secondary btn-lg">
+              <span>Explore Menu</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-floating-meta reveal-item">
+          <div class="meta-item">
+            <span class="meta-label">DINE-IN &amp; DELIVERY</span>
+            <span class="meta-val">Rs 1,000–2,000 / person</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-label">MIDNIGHT SERVICE</span>
+            <span class="meta-val">Open till 2:00 AM Daily</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About & Architectural Concept -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="about-grid">
+          <div class="about-text-col reveal-item">
+            <span class="eyebrow">THE ARCHITECTURAL CONCEPT</span>
+            <h2 class="section-heading">
+              Raw Stone.<br />Refined Street Spice.
+            </h2>
+            <p class="body-lead">
+              Oley &amp; Thusoo was conceived as an architectural counterpoint to conventional dining in Islamabad. Situated along Faisal Ave, our warm stone facade and open structural geometry create a calm, tactile sanctuary for casual street food lovers.
+            </p>
+            <p class="body-text">
+              We take street culinary staples—crisp handcrafted gol gappay with spiced mint infusions, tang-laden papri chaat—and elevate them alongside flame-kissed charcoal kebabs and glazed wings. No pretense, just deliberate flavors and honest design.
+            </p>
+            <div class="about-signature">
+              <span class="sig-title">1796 FAISAL AVE, BLOCK A, F18</span>
+              <span class="sig-sub">ISLAMABAD, PAKISTAN</span>
+            </div>
+          </div>
+
+          <div class="about-stats-col reveal-item">
+            <div class="stats-card-matrix">
+              <div class="stat-card accent-card">
+                <div class="stat-number-wrap">
+                  <span class="stat-number" data-target="4.3" data-decimals="1">4.3</span>
+                  <svg class="stat-star-icon" width="24" height="24" viewBox="0 0 24 24" fill="#D89B3C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </div>
+                <span class="stat-label">Google Rating</span>
+                <span class="stat-sub">Based on verified guest reviews</span>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-number-wrap">
+                  <span class="stat-number" data-target="58">58</span>
+                  <span class="stat-symbol">+</span>
+                </div>
+                <span class="stat-label">Verified Reviews</span>
+                <span class="stat-sub">Lauded for atmosphere &amp; food</span>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-number-wrap">
+                  <span class="stat-number" data-target="2" data-suffix=" AM">2 AM</span>
+                </div>
+                <span class="stat-label">Late Night Dining</span>
+                <span class="stat-sub">Kitchen fires burning till 2 AM</span>
+              </div>
+
+              <div class="stat-card dark-card">
+                <div class="stat-tag">PRICING</div>
+                <div class="stat-price-range">Rs 1k – 2k</div>
+                <span class="stat-label">Average per person</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Menu Highlights Section -->
+    <section id="menu" class="menu-section">
+      <div class="section-container">
+        <div class="menu-header-row reveal-item">
+          <div>
+            <span class="eyebrow">CURATED DISHES</span>
+            <h2 class="section-heading">Signature Menu</h2>
+          </div>
+          <div class="menu-controls">
+            <button class="menu-filter-btn active" data-filter="all">All Items</button>
+            <button class="menu-filter-btn" data-filter="street">Chaat &amp; Street</button>
+            <button class="menu-filter-btn" data-filter="grill">Kebabs &amp; Grills</button>
+            <button class="menu-filter-btn" data-filter="wings">Wings &amp; Fries</button>
+          </div>
+        </div>
+
+        <div class="menu-stage-layout">
+          <!-- Left: Dynamic Interactive Menu List -->
+          <div class="menu-list-column">
+            
+            <!-- Item 1 -->
+            <div class="menu-item-row reveal-item" 
+                 data-category="street"
+                 data-img="./assets/street_food_golgappe.jpg"
+                 data-title="Artisanal Gol Gappay Platter"
+                 data-desc="Eight hollow crispy puris stuffed with spiced chickpea-potato mash, served alongside chilled mint-coriander and sweet tamarind shooter shots."
+                 data-price="Rs 650">
+              <div class="item-main-info">
+                <div class="item-title-wrap">
+                  <h3 class="item-name">Artisanal Gol Gappay Platter</h3>
+                  <span class="badge badge-street">House Signature</span>
+                </div>
+                <p class="item-desc">Crispy puris, potato-chickpea core, spicy mint water &amp; tamarind shots</p>
+              </div>
+              <div class="item-price-action">
+                <span class="item-price">Rs 650</span>
+                <button class="btn-item-preview" aria-label="View Gol Gappay details">+</button>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="menu-item-row reveal-item" 
+                 data-category="street"
+                 data-img="./assets/papri_chaat.jpg"
+                 data-title="Special Papri Chaat Bowl"
+                 data-desc="Hand-broken crisp papri wafers layered with spiced chickpeas, whipped whole milk yogurt, date-tamarind chutney, and fresh pomegranate arils."
+                 data-price="Rs 720">
+              <div class="item-main-info">
+                <div class="item-title-wrap">
+                  <h3 class="item-name">Special Papri Chaat Bowl</h3>
+                  <span class="badge badge-vibe">Popular</span>
+                </div>
+                <p class="item-desc">Crushed papri, sweet yogurt, tamarind reduction, pomegranate &amp; mint</p>
+              </div>
+              <div class="item-price-action">
+                <span class="item-price">Rs 720</span>
+                <button class="btn-item-preview" aria-label="View Papri Chaat details">+</button>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="menu-item-row reveal-item" 
+                 data-category="grill"
+                 data-img="./assets/grill_kebabs.jpg"
+                 data-title="Charcoal Seekh Kebab Skewers"
+                 data-desc="Hand-minced beef flavored with crushed green chilies, coriander seeds, and raw spices, slow-grilled over white oak charcoal."
+                 data-price="Rs 1,180">
+              <div class="item-main-info">
+                <div class="item-title-wrap">
+                  <h3 class="item-name">Charcoal Seekh Kebab Skewers</h3>
+                  <span class="badge badge-grill">Charcoal Grilled</span>
+                </div>
+                <p class="item-desc">Melt-in-mouth spiced minced beef, charred onions, garlic naan &amp; mint raita</p>
+              </div>
+              <div class="item-price-action">
+                <span class="item-price">Rs 1,180</span>
+                <button class="btn-item-preview" aria-label="View Seekh Kebab details">+</button>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="menu-item-row reveal-item" 
+                 data-category="grill"
+                 data-img="./assets/grill_kebabs.jpg"
+                 data-title="Smoked Chicken Tikka Boti"
+                 data-desc="Boneless chicken thighs marinated in mustard oil, hung curd, and roasted cumin, charred to order on embers."
+                 data-price="Rs 1,250">
+              <div class="item-main-info">
+                <div class="item-title-wrap">
+                  <h3 class="item-name">Smoked Chicken Tikka Boti</h3>
+                </div>
+                <p class="item-desc">Hung-curd marination, smoky chili glaze, served with house mint dip</p>
+              </div>
+              <div class="item-price-action">
+                <span class="item-price">Rs 1,250</span>
+                <button class="btn-item-preview" aria-label="View Tikka Boti details">+</button>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="menu-item-row reveal-item" 
+                 data-category="wings"
+                 data-img="./assets/wings_fries.jpg"
+                 data-title="Sticky Honey Chili Wings"
+                 data-desc="Double-fried crispy jumbo wings tossed in a spicy-sweet Kashmiri chili reduction with toasted sesame seeds."
+                 data-price="Rs 980">
+              <div class="item-main-info">
+                <div class="item-title-wrap">
+                  <h3 class="item-name">Sticky Honey Chili Wings</h3>
+                  <span class="badge badge-wings">Crispy</span>
+                </div>
+                <p class="item-desc">6 jumbo wings, Kashmiri chili glaze, scallions &amp; garlic aioli</p>
+              </div>
+              <div class="item-price-action">
+                <span class="item-price">Rs 980</span>
+                <button class="btn-item-preview" aria-label="View Wings details">+</button>
+              </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="menu-item-row reveal-item" 
+                 data-category="wings"
+                 data-img="./assets/wings_fries.jpg"
+                 data-title="Oley Loaded Masala Fries"
+                 data-desc="Hand-cut double cooked potatoes dusted with house chaat masala, melted sharp cheddar, diced jalapeños, and spiced cream."
+                 data-price="Rs 850">
+              <div class="item-main-info">
+                <div class="item-title-wrap">
+                  <h3 class="item-name">Oley Loaded Masala Fries</h3>
+                </div>
+                <p class="item-desc">Skin-on potato wedges, secret house masala, jalapeños &amp; melted cheese</p>
+              </div>
+              <div class="item-price-action">
+                <span class="item-price">Rs 850</span>
+                <button class="btn-item-preview" aria-label="View Loaded Fries details">+</button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Interactive Live Image Preview Canvas -->
+          <div class="menu-preview-column reveal-item">
+            <div class="preview-card" id="menu-preview-card">
+              <div class="preview-img-box">
+                <img src="./assets/street_food_golgappe.jpg" alt="Menu Dish Preview" id="preview-img" />
+                <span class="preview-category-badge" id="preview-category">CHAAT &amp; STREET</span>
+              </div>
+              <div class="preview-info-box">
+                <div class="preview-header">
+                  <h3 id="preview-title">Artisanal Gol Gappay Platter</h3>
+                  <span id="preview-price" class="preview-price-tag">Rs 650</span>
+                </div>
+                <p id="preview-desc">Eight hollow crispy puris stuffed with spiced chickpea-potato mash, served alongside chilled mint-coriander and sweet tamarind shooter shots.</p>
+                <div class="preview-action-row">
+                  <a href="https://www.foodpanda.pk" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-full">
+                    <span>Order This Item</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. The Space (Architectural Feature) -->
+    <section id="space" class="space-section">
+      <div class="space-bg-wrap">
+        <img src="./assets/interior_space.jpg" alt="Interior architectural design of Oley & Thusoo" class="space-bg-img" />
+        <div class="space-overlay"></div>
+      </div>
+
+      <div class="space-container">
+        <div class="space-content-box reveal-item">
+          <span class="eyebrow light-eyebrow">ARCHITECTURAL IDENTITY</span>
+          <h2 class="space-title">
+            Designed to feel tactile, spacious, and unhurried.
+          </h2>
+          <p class="space-text">
+            "Reviewers frequently point to our distinct architectural space—high geometric ceilings, raw textured stone walls, and warm ambient lighting. It's a modern dining hall built for long late-night conversations over street food."
+          </p>
+          <div class="space-features-grid">
+            <div class="space-feat">
+              <span class="feat-num">01</span>
+              <h4>Tactile Materials</h4>
+              <p>Unpolished stone, raw concrete, and solid wood surfaces.</p>
+            </div>
+            <div class="space-feat">
+              <span class="feat-num">02</span>
+              <h4>Ambient Acoustics</h4>
+              <p>Designed layout preventing echo for comfortable late discussions.</p>
+            </div>
+            <div class="space-feat">
+              <span class="feat-num">03</span>
+              <h4>Late-Night Vibe</h4>
+              <p>Warm dimmed architectural lighting active until 2 AM.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Gallery Section -->
+    <section class="gallery-section">
+      <div class="section-container">
+        <div class="gallery-header reveal-item">
+          <span class="eyebrow">VISUAL JOURNAL</span>
+          <h2 class="section-heading">Flavors &amp; Atmosphere</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item item-tall reveal-item">
+            <img src="./assets/street_food_golgappe.jpg" alt="Gol gappay food detail" />
+            <div class="gallery-overlay-caption">
+              <span>GOL GAPPAY SHOOTERS</span>
+            </div>
+          </div>
+          <div class="gallery-item reveal-item">
+            <img src="./assets/grill_kebabs.jpg" alt="Charcoal kebabs detail" />
+            <div class="gallery-overlay-caption">
+              <span>CHARCOAL KEBABS</span>
+            </div>
+          </div>
+          <div class="gallery-item reveal-item">
+            <img src="./assets/wings_fries.jpg" alt="Wings & Fries detail" />
+            <div class="gallery-overlay-caption">
+              <span>GLAZED WINGS &amp; FRIES</span>
+            </div>
+          </div>
+          <div class="gallery-item item-wide reveal-item">
+            <img src="./assets/hero_architecture.jpg" alt="Exterior facade at night" />
+            <div class="gallery-overlay-caption">
+              <span>FAISAL AVE FACADE</span>
+            </div>
+          </div>
+          <div class="gallery-item reveal-item">
+            <img src="./assets/papri_chaat.jpg" alt="Special papri chaat bowl" />
+            <div class="gallery-overlay-caption">
+              <span>PAPRI CHAAT BOWL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Verified Reviews & Guest Sentiment -->
+    <section id="reviews" class="reviews-section">
+      <div class="section-container">
+        <div class="reviews-header reveal-item">
+          <div>
+            <span class="eyebrow">GUEST REVIEWS</span>
+            <h2 class="section-heading">4.3 Rating · 58 Verified Reviews</h2>
+          </div>
+          <div class="google-badge-pill">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s4.48 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+            <span>Verified Google Reviews</span>
+          </div>
+        </div>
+
+        <div class="reviews-asymmetric-grid">
+          <!-- Card 1 -->
+          <div class="review-card card-featured reveal-item">
+            <div class="card-stars">
+              <svg class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#D89B3C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#D89B3C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#D89B3C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#D89B3C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#D89B3C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <p class="review-quote">
+              "The architecture alone sets Oley &amp; Thusoo apart from every other casual eatery in Islamabad. Stunning raw concrete design, combined with gol gappay that hit every spice note perfectly."
+            </p>
+            <div class="reviewer-meta">
+              <span class="reviewer-name">Hamza K.</span>
+              <span class="reviewer-tag">Local Guide · Islamabad</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="review-card reveal-item">
+            <div class="card-stars">
+              <svg class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#D89B3C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#D89B3C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#D89B3C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#D89B3C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#D89B3C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <p class="review-quote">
+              "Finally a place open till 2 AM that isn't just basic fast food! Their charcoal seekh kebabs and wings are incredible. Great clean atmosphere and attentive staff."
+            </p>
+            <div class="reviewer-meta">
+              <span class="reviewer-name">Zainab R.</span>
+              <span class="reviewer-tag">Dine-in Customer</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="review-card reveal-item">
+            <div class="card-stars">
+              <svg class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#D89B3C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#D89B3C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#D89B3C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#D89B3C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg class="star-icon" width="16" height="16" viewBox="0 0 24 24" fill="#D89B3C"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <p class="review-quote">
+              "Love the fusion of street food staples like papri chaat with proper grilled items. Reasonable prices for the high quality and modern vibe."
+            </p>
+            <div class="reviewer-meta">
+              <span class="reviewer-name">Saad M.</span>
+              <span class="reviewer-tag">Foodpanda Delivery Review</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. Location, Hours & Interactive Map -->
+    <section id="location" class="location-section">
+      <div class="section-container">
+        <div class="location-split-grid">
+          
+          <!-- Location Details Column -->
+          <div class="location-info-col reveal-item">
+            <span class="eyebrow">FIND US IN ISLAMABAD</span>
+            <h2 class="section-heading">Location &amp; Service Hours</h2>
+
+            <div class="info-block-list">
+              
+              <div class="info-block">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <h4>Address</h4>
+                  <p class="info-detail">Block A, F18, 1796 Faisal Ave, Faisal Town, Islamabad</p>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div>
+                  <h4>Operating Hours</h4>
+                  <p class="info-detail">Every Day: 4:00 PM – 2:00 AM (Late Night Service)</p>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <div class="info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <h4>Direct Call / Reservation</h4>
+                  <p class="info-detail"><a href="tel:+923035710000" class="tel-link">+92 303 5710000</a></p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="location-actions">
+              <a href="https://maps.google.com/?q=Oley+And+Thusoo+Islamabad" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <span>Get Directions (Google Maps)</span>
+              </a>
+              <a href="https://wa.me/923035710000?text=Hi%20Oley%20%26%20Thusoo,%20I'd%20like%20to%20inquire%20about%20a%20table%20/%20takeaway" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                <span>WhatsApp Us</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Stylized Custom Map View -->
+          <div class="map-view-col reveal-item">
+            <div class="custom-map-card">
+              <div class="map-canvas-mock" id="map-canvas">
+                <div class="map-grid-pattern"></div>
+                <div class="map-route-line"></div>
+                <div class="map-pin-point">
+                  <div class="pin-pulse"></div>
+                  <div class="pin-marker">
+                    <span class="pin-initials">O&amp;T</span>
+                  </div>
+                  <div class="pin-card-pop">
+                    <strong>OLEY &amp; THISOO</strong>
+                    <span>1796 Faisal Ave, Islamabad</span>
+                    <span class="status-open">Open till 2 AM</span>
+                  </div>
+                </div>
+                <div class="map-control-overlay">
+                  <span class="map-badge">FAISAL TOWN / BLOCK A</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <span class="brand-name">OLEY &amp; THISOO</span>
+            <span class="brand-sub">ISLAMABAD</span>
+          </a>
+          <p class="footer-tagline">
+            Modern casual dining with a street food edge in Islamabad.
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h5>Navigation</h5>
+            <a href="#about">Story &amp; Architecture</a>
+            <a href="#menu">Signature Menu</a>
+            <a href="#space">The Space</a>
+            <a href="#reviews">Guest Reviews</a>
+          </div>
+
+          <div class="footer-col">
+            <h5>Contact &amp; Delivery</h5>
+            <a href="tel:+923035710000">+92 303 5710000</a>
+            <a href="https://www.foodpanda.pk" target="_blank" rel="noopener noreferrer">Order Foodpanda</a>
+            <a href="#location">Directions &amp; Hours</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Oley &amp; Thusoo. All rights reserved. Faisal Town, Islamabad.</p>
+        <p class="designer-credit">Crafted with architectural precision &amp; street flavor.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification element -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
