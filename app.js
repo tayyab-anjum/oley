@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Oley & Thusoo — Interactive Application Logic
+   The Urban Kitchen — Interactive Application Logic
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
